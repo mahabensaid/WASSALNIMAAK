@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.besai.wassalnimaak.sql.ConducteurActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/app_bar_conducteur">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText"
+                style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+                android:layout_width="196dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Post a new offer "
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="41dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labeldepart"
+            android:layout_width="112dp"
+            android:layout_height="28dp"
+            android:text="starting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView2"
+            android:layout_width="108dp"
+            android:layout_height="29dp"
+            android:text="arrival"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price per place"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText2"
+                android:layout_width="83dp"
+                android:layout_height="38dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="260dp"
+                tools:layout_editor_absoluteY="216dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/EditTextdescription"
+                android:layout_width="348dp"
+                android:layout_height="129dp"
+                android:hint="Type your offer 's description here for more details"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="293dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Post"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="434dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutarrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editarriva"
+                style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+                android:layout_width="193dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="entrer point de depart "
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="121dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoudepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editdepart"
+                style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+                android:layout_width="193dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="entrer point d'arrivée "
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="171dp" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.constraint.ConstraintLayout>
