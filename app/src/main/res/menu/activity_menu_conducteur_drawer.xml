@@ -8,18 +8,18 @@
             android:title="Post an offer" />
         <item
             android:id="@+id/published_offer"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/reservation"
             android:title="Published offers" />
         <item
             android:id="@+id/Reservation"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/res"
             android:title="Reservation" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_tools2"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
     </group>
-
+<!--
     <item android:title="Communicate">
         <menu>
             <item
@@ -31,10 +31,12 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
         </menu>
+
     </item>
+    -->
     <item
         android:id="@+id/log_out"
-        android:icon="@drawable/ic_menu_share"
+        android:icon="@drawable/logout"
         android:title="Log out" />
 
 </menu>

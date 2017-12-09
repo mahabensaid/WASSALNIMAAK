@@ -40,9 +40,9 @@ public class activity_co_register extends AppCompatActivity {
     }
     private void initViews() {
 
-        textInputcartype = (TextInputLayout) findViewById(R.id.textInputcartype);
+       textInputcartype = (TextInputLayout) findViewById(R.id.textInputcartype);
         textInputLayotdescrib = (TextInputLayout) findViewById(R.id.textInputLayotdescrib);
-        type_voiture = (TextInputEditText) findViewById(R.id.type_voiture);
+       type_voiture = (TextInputEditText) findViewById(R.id.type_voiture);
         EditTextdescription = (TextInputEditText) findViewById(R.id.EditTextdescription);
 
         button = (AppCompatButton) findViewById(R.id.button);

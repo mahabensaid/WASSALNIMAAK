@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WASSALNIMAAK2</string>
+    <string name="app_name">WASSALNIMAAK</string>
     <string name="text_accounts">All Accounts</string>
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
@@ -37,8 +37,9 @@
     <string name="title_activity_maps">Map</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_menu__conducteur">Menu_Conducteur</string>
-    <string name="title_activity_menu_conducteur">Menu_conducteur</string>
-    <string name="title_activity_menu_passager">Menu_passager</string>
+    <string name="change_password_fragment">Change password</string>
+    <string name="title_activity_menu__conducteur">Menu</string>
+    <string name="title_activity_menu_conducteur">Menu</string>
+    <string name="title_activity_menu_passager">Menu</string>
+    <string name="post_offer">to post a new offer you should complete the form bellow</string>
 </resources>

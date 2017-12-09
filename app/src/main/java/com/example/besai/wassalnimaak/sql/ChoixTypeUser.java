@@ -7,6 +7,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.besai.wassalnimaak.Menu_passager;
 import com.example.besai.wassalnimaak.R;
 
 public class ChoixTypeUser extends AppCompatActivity {
@@ -34,6 +35,8 @@ public class ChoixTypeUser extends AppCompatActivity {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button2:
+                Intent intentcontent = new Intent(getApplicationContext(), Menu_passager.class);
+                startActivity(intentcontent);
                 break;
             case R.id.button3:
                 // Navigate to RegisterActivity

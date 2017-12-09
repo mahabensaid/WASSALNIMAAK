@@ -4,22 +4,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_maps"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/mapp"
             android:title="Maps" />
         <item
             android:id="@+id/nav_list"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/list"
             android:title="List of offers" />
         <item
             android:id="@+id/nav_reservationp"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/reservation"
             android:title="Reservations" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
     </group>
-
+<!--
     <item android:title="Communicate">
         <menu>
             <item
@@ -27,10 +27,15 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
                 android:title="Send" />
         </menu>
     </item>
+    -->
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="log out" />
 
 </menu>

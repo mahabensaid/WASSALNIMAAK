@@ -1,5 +1,6 @@
 package com.example.besai.wassalnimaak;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.besai.wassalnimaak.sql.LoginActivity;
+
+
 
 public class Menu_passager extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -42,6 +47,7 @@ public class Menu_passager extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        displaySelectedScreen(R.id.nav_maps);
     }
 
     @Override
@@ -94,10 +100,11 @@ public class Menu_passager extends AppCompatActivity
         //initializing the fragment object which is selected
         switch (itemId) {
             case R.id.nav_maps:
-                fragment = new Post_offer();
+                fragment = new MapsFragment();
                 break;
             case R.id.nav_list:
-                fragment = new MainFragment();
+               // fragment = new MainFragment();
+                fragment = new ListFragment();
 
                 break;
             case R.id.nav_reservationp:
@@ -105,16 +112,21 @@ public class Menu_passager extends AppCompatActivity
 
                 break;
 
-            case R.id.nav_manage:
+            case R.id.nav_tools:
+                fragment = new ToolsFragment();
                 break;
 
-            case R.id.nav_share:
+          /*  case R.id.nav_share:
                 break;
 
             case R.id.nav_send:
 
-                break;
-            case R.id.log_out:
+                break;*/
+            case R.id.nav_logout:
+                Intent in = new Intent(this, LoginActivity.class);
+                startActivity(in);
+                finish();
+
 
                 break;
 

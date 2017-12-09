@@ -1,5 +1,8 @@
 package com.example.besai.wassalnimaak.sql;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,13 +18,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.besai.wassalnimaak.MainActivity;
 import com.example.besai.wassalnimaak.MainFragment;
 import com.example.besai.wassalnimaak.Post_offer;
 import com.example.besai.wassalnimaak.R;
+import com.example.besai.wassalnimaak.ToolsFragment;
 
 public class Menu_conducteur extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    SharedPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,18 +117,19 @@ public class Menu_conducteur extends AppCompatActivity
 
                 break;
 
-            case R.id.nav_manage:
+            case R.id.nav_tools2:
+                fragment= new ToolsFragment();
                 break;
 
-            case R.id.nav_share:
-                break;
 
-            case R.id.nav_send:
-
-                break;
             case R.id.log_out:
-
+                //logout();
+                Intent in = new Intent(this, LoginActivity.class);
+                startActivity(in);
+                finish();
                 break;
+
+
 
         }
 
@@ -136,6 +143,16 @@ public class Menu_conducteur extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+    }
+
+    private void logout(){
+        //TODO delete cookie from db
+        /*
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.remove(Config.SESSION);
+        editor.remove(Bitmap.Config.USERNAME);
+        editor.commit();*/
     }
 
 }
