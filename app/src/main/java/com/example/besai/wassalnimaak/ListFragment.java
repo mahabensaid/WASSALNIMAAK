@@ -103,27 +103,31 @@ public class ListFragment extends Fragment {
         productList.add(
                 new Offer(
                         1,
-                        "Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)",
-                        "13.3 inch, Silver, 1.35 kg",
-                        4.3,
+                        "De Carthage Salammbo à charguiya 2" +
+                                " RDV devant la station de train Carthage Salammbo",
+                        "4 personnes",
+                        2D,
                         60000,
                         R.drawable.logo));
 
         productList.add(
                 new Offer(
                         1,
-                        "Dell Inspiron 7000 Core i5 7th Gen - (8 GB/1 TB HDD/Windows 10 Home)",
-                        "14 inch, Gray, 1.659 kg",
-                        4.3,
+                        "De Bardo à charguiya 2" +
+                                " RDV devant le foyer bardo 2" +
+                                " numéro: 50988382",
+                        "3 personnes",
+                        1.5,
                         60000,
                         R.drawable.logo));
 
         productList.add(
                 new Offer(
                         1,
-                        "Microsoft Surface Pro 4 Core m3 6th Gen - (4 GB/128 GB SSD/Windows 10)",
-                        "13.3 inch, Silver, 1.35 kg",
-                        4.3,
+                        "Du Centre ville au Lac 2" +
+                                " RDV devant Central park",
+                        "2 personnes",
+                        2,
                         60000,
                         R.drawable.logo));
 

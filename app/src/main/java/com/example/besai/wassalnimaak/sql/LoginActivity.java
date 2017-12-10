@@ -12,6 +12,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
+import com.example.besai.wassalnimaak.Menu_passager;
 import com.example.besai.wassalnimaak.helpers.InputValidation;
 import com.example.besai.wassalnimaak.R;
 
@@ -118,7 +119,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
                     , textInputEditTextPassword.getText().toString().trim())) {
 
-
+                Intent accountsIntent = new Intent(activity, Menu_passager.class);
+                accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
+                emptyInputEditText();
+                startActivity(accountsIntent);
 
 
             } else {

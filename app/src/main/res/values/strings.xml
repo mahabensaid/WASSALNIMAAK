@@ -38,8 +38,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="change_password_fragment">Change password</string>
-    <string name="title_activity_menu__conducteur">Menu</string>
-    <string name="title_activity_menu_conducteur">Menu</string>
-    <string name="title_activity_menu_passager">Menu</string>
+    <string name="title_activity_menu__conducteur">Driver</string>
+    <string name="title_activity_menu_conducteur">Driver</string>
+    <string name="title_activity_menu_passager">Pedestrian</string>
     <string name="post_offer">to post a new offer you should complete the form bellow</string>
 </resources>
