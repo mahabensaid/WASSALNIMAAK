@@ -30,10 +30,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_EMAIL = "user_email";
     private static final String COLUMN_USER_PASSWORD = "user_password";
 
+
     // create table sql query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
             + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
+            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + ")";
 
     // drop table sql query
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
@@ -77,6 +78,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(COLUMN_USER_EMAIL, user.getEmail());
         values.put(COLUMN_USER_PASSWORD, user.getPassword());
 
+
         // Inserting Row
         db.insert(TABLE_USER, null, values);
         db.close();
@@ -93,7 +95,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COLUMN_USER_ID,
                 COLUMN_USER_EMAIL,
                 COLUMN_USER_NAME,
-                COLUMN_USER_PASSWORD
+                COLUMN_USER_PASSWORD,
+
         };
         // sorting orders
         String sortOrder =
@@ -125,6 +128,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 user.setName(cursor.getString(cursor.getColumnIndex(COLUMN_USER_NAME)));
                 user.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_USER_EMAIL)));
                 user.setPassword(cursor.getString(cursor.getColumnIndex(COLUMN_USER_PASSWORD)));
+
+
+
                 // Adding user record to list
                 userList.add(user);
             } while (cursor.moveToNext());
